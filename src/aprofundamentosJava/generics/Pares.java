@@ -1,12 +1,12 @@
 package aprofundamentosJava.generics;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Optional;
 import java.util.Set;
 
 
 public class Pares<c extends Number, v> {
-	private final Set<Par<c, v>> items = new HashSet<>();
+	private final Set<Par<c, v>> items = new LinkedHashSet<>();
 
 	public void adicionar(c chave, v valor) {
 		if (chave == null)
